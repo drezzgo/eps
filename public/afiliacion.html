@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Aplicación</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container px-28 py-5">
+        <nav class="flex items-center ">
+            <a href="public/index.html" class="flex">
+                <img src="../public/images/Chuensuca_logo.png" alt="logo" class="w-20 cursor-pointer ">
+                <h1 class="px-6 py-5 text-3xl text-[#647c5c] font-semibold font">Chuensuca EPS</h1>
+            </a>
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5"><a href="pages/afiliacion.html" class="no-underline text-[#647c5c] PX-2">Afiliate</a></li>
+                <li class="list-none inline-block px-5"><a href="pages/adulto_mayor.html" class="no-underline text-[#647c5c] PX-2">Programas al adulto mayor</a></li>
+                <li class="list-none inline-block px-5"><a href="pages/login.html" class="no-underline text-[#647c5c] PX-2">Portal transaccional</a></li>
+            </ul>
+            <a class="bg-[#647c5c] text-[#fff] rounded-3xl py-3 px-8 font-medium inline-block
+            mr-4 hover:bg-transparent hover:border-[#647c5c] hover:text-[#647c5c] duration-300 hover:border">Portal transaccional</a>
+        </nav>
+    </div>
+
+    <main class="container">
+        <div class="flex w-auto shadow-2xl mt-5 mx-64">
+            <div class="w-1/2" style="background-image: url(images/fondo.jpg)">
+                <h2>Bienvenido</h2>
+            </div>
+
+            <div class="w-1/2 py-16 px-12">
+                <h2 class="text-3xl mb-4">Afiliate con nosotros</h2>
+                <p class="mb-4">Crea tu cuenta y empieza a ser beneficiario de nuestra EPS</p>
+                <form action="#">
+                    <div class="grid grid-cols-2 gap-5 mt-5">
+                        <label class="text-[#647c5c] font-medium p-1">Tipo de identificación</label>
+                        <select class="border border-gray-400 text-[#647c5c] p-1">
+                            <option value=""></option>
+                            <option value="CC">CEDULA</option>
+                            <option value="CE">CEDULA EXTRANJERA</option>
+                            <option value="RC">REGISTRO CIVIL</option>
+                            <option value="TR">TARJETA DE IDENTIDAD</option>
+                        </select>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 mt-4">
+                        <input type="text" placeholder="Nombre Completo" class="border border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Numero de identificación" class="border border-gray-400 py-1 px-2">
+                    </div>
+                    <div class="mt-5">
+                        <input type="text" placeholder="Cedula" class="border border-gray-400 py-1 px-2 w-full">
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 mt-5">
+                        <input type="date" placeholder="Fecha de nacimiento" class="border border-gray-400 py-1 px-2 text-gray-400">
+                        <input type="text" placeholder="Lugar de nacimiento" class="border border-gray-400 py-1 px-2">
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 mt-5">
+                        <input type="text" placeholder="Estrato" class="border border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Ciudad de residencia" class="border border-gray-400 py-1 px-2">
+                    </div>
+                    <div class="grid grid-cols-2 gap-5 mt-5">
+                        <label class="text-[#647c5c] font-medium p-1">Sede de afiliacion</label>
+                        <select class="border border-gray-400 text-[#647c5c] p-1">
+                            <option value=""></option>
+                            <option value="Bogota">Bogota</option>
+                            <option value="Medellin">Medellin</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Pasto">Pasto</option>
+                        </select>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <footer></footer>
+    </main>
+
+    <script src="public/js/main.js"></script> <!--Ajusta la ruta según tu estructura de carpetas -->
+</body>
+</html>
