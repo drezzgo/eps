@@ -25,8 +25,8 @@
 
     <main class="container">
         <div class="flex w-auto shadow-2xl mt-5 mx-64">
-            <div class="w-1/2" style="background-image: url(images/fondo.jpg)">
-                <h2>Bienvenido</h2>
+            <div class="w-1/2 bg-center flex flex-col items-center justify-center" style="background-image: url(images/fondo.jpg)">
+                <h2 class="text-[#647c5c] text-7xl font-bold font-Franklin mb-3 p-12 bg-no-repeat bg-cover bg-center">Bienvenido</h2>
             </div>
 
             <div class="w-1/2 py-16 px-12">
@@ -48,7 +48,7 @@
                         <input type="text" placeholder="Numero de identificación" class="border border-gray-400 py-1 px-2">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Cedula" class="border border-gray-400 py-1 px-2 w-full">
+                        <input type="text" placeholder="Correo" class="border border-gray-400 py-1 px-2 w-full">
                     </div>
                     <div class="grid grid-cols-2 gap-5 mt-5">
                         <input type="date" placeholder="Fecha de nacimiento" class="border border-gray-400 py-1 px-2 text-gray-400">
@@ -68,7 +68,9 @@
                             <option value="Pasto">Pasto</option>
                         </select>
                     </div>
-                    
+                    <div class="mt-5">
+                        <button class="bg-white text-[#647c5c] rounded-3xl border border-gray-400 hover:bg-transparent hover:border-[#647c5c] hover:text-[#647c5c] hover:font-semibold duration-300 hover:border py-1 px-2 w-full">Afiliarte</button>
+                    </div>
                 </form>
             </div>
         </div>
